@@ -7,7 +7,7 @@ let esbuildInitalized: boolean | Promise<void> = false;
 const ensureEsbuildInialized = async () => {
   if (esbuildInitalized === false) {
     esbuildInitalized = esbuild.initialize({
-      wasmURL: "https://unpkg.com/esbuild-wasm@0.12.20/esbuild.wasm",
+      wasmURL: "https://unpkg.com/esbuild-wasm@0.11.19/esbuild.wasm",
       worker: false,
     });
     await esbuildInitalized;
